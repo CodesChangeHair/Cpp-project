@@ -9,7 +9,7 @@ add_compile_options("$<$<CXX_COMPILER_ID:MSVC>:/utf-8>")
 
 include_directories(./)
 
-file(GLOB_RECURSE SOURCES "utility/*cpp")
+file(GLOB_RECURSE SOURCES "utility/*cpp"  "socket/*cpp")
 
 add_executable(server ${SOURCES} server.cpp)
 add_executable(client ${SOURCES} client.cpp)
